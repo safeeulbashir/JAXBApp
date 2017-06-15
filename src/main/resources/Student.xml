@@ -1,31 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<tns:Student xmlns:tns="http://www.example.org/Student"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.example.org/Student student.xsd ">
-	<tns:studentId>1</tns:studentId>
-	<tns:firstName>Safeeul Bashir</tns:firstName>
-	<tns:lastName>Safee</tns:lastName>
-	<tns:marks>
-		<tns:mark>
-			<tns:subject>Java</tns:subject>
-			<tns:mark>90</tns:mark>
-			<tns:maxMark>100</tns:maxMark>
-		</tns:mark>
-		<tns:mark>
-			<tns:subject>C++</tns:subject>
-			<tns:mark>95</tns:mark>
-			<tns:maxMark>100</tns:maxMark>
-		</tns:mark>
-	</tns:marks>
-	<tns:addresses>
-		<tns:address>
-			<tns:addressType>HOME</tns:addressType>
-			<tns:line1>1026 San Jacinto Dr.</tns:line1>
-			<tns:line2>Apt 1026</tns:line2>
-			<tns:city>Irving</tns:city>
-			<tns:state>Tx</tns:state>
-			<tns:zip>75063</tns:zip>
-			<tns:country>USA</tns:country>
-		</tns:address>
-	</tns:addresses>
-</tns:Student>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student xmlns="http://www.example.org/Student">
+    <studentId>1</studentId>
+    <firstName>Safeeul Bashir</firstName>
+    <lastName>Safee</lastName>
+    <address>
+        <addressType>HOME</addressType>
+        <line1>1026 San Jacinto Dr.</line1>
+        <line2>Apt 1714</line2>
+        <city>Irving</city>
+        <state>TX</state>
+        <zip>75063</zip>
+        <country>USA</country>
+    </address>
+    <address>
+        <addressType>HOME</addressType>
+        <line1>951 Buena Vista Dr. SE.</line1>
+        <line2>Apt G201</line2>
+        <city>Albuquerque</city>
+        <state>NM</state>
+        <zip>87106</zip>
+        <country>USA</country>
+    </address>
+    <mark>
+        <subject>JAVA</subject>
+        <mark>90</mark>
+        <maxMark>100</maxMark>
+    </mark>
+    <mark>
+        <subject>C++</subject>
+        <mark>95</mark>
+        <maxMark>100</maxMark>
+    </mark>
+</student>

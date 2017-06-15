@@ -12,10 +12,10 @@
     		<element name="lastName" type="string" maxOccurs="1"
     			minOccurs="1">
     		</element>
-    		<element name="marks" type="tns:marks" maxOccurs="1"
+    		<element name="address" type="tns:address" maxOccurs="2"
     			minOccurs="1">
     		</element>
-    		<element name="addresses" type="tns:addresses" maxOccurs="1"
+    		<element name="mark" type="tns:mark" maxOccurs="unbounded"
     			minOccurs="1">
     		</element>
     	</sequence>
@@ -40,11 +40,6 @@
     	</sequence>
     </complexType>
     
-    <complexType name="addresses">
-    	<sequence maxOccurs="2" minOccurs="1">
-    		<element name="address" type="tns:address"></element>
-    	</sequence>
-    </complexType>
 
     <complexType name="mark">
     	<sequence>
@@ -58,11 +53,6 @@
     	</sequence>
     </complexType>
 
-    <complexType name="marks">
-    	<sequence>
-    		<element name="mark" type="tns:mark" maxOccurs="unbounded" minOccurs="1"></element>
-    	</sequence>
-    </complexType>
 
     <element name="Student" type="tns:Student"></element>
 </schema>
